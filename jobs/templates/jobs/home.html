@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load staticfiles%}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -42,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#">Twitter</a>
-                <a class="nav-item nav-link" href="#">Resume</a>
+                <a class="nav-item nav-link" href="{% static 'pythom_server_cheat_sheet.docx'%}">Resume</a>
                 <a class="nav-item nav-link" href="#">Blog</a>
                 
               </div>
@@ -57,6 +58,7 @@
       <p>
         <a href="#" class="btn btn-primary my-2">Email Me</a>
       </p>
+      <img src="{% static 'minion.jpg'%}"/>
     </div>
   </section>
 
